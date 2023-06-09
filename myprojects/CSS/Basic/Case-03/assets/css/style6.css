@@ -1,0 +1,45 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(32.5vh, auto);
+}
+.one {
+    grid-column:  1/3;
+    grid-row: 1;
+    background-color: red
+}
+.two {
+    grid-column: 1;
+    grid-row:  2;
+    background-color:green;
+}
+.three {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: brown;
+}
+.four {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: deeppink;
+}
+.five {
+    grid-column: 2/4;
+    grid-row: 3;
+    background-color: purple;
+}
+.six {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: green;
+}
+.seven {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: blue;
+}
+.eight {
+    grid-column: 4;
+    grid-row: 1/4;
+    background-color: orangered;
+}

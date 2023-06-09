@@ -1,0 +1,68 @@
+body{
+    background-color: #2e3136;
+}
+
+main{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    overflow: hidden;
+    /*overflow-scrolling: auto;*/
+    /*overflow-x: scroll;*/
+    border: 5px solid gray;
+}
+
+main>section{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    animation-name: slider-animation;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+main>section>div{
+    width: 100%;
+}
+
+section>div:nth-child(1){
+    background-size: cover;
+    background: url("../images/slide1.png") center;
+}
+
+section>div:nth-child(2){
+    background-size: cover;
+    background: url("../images/slide2.png") center;
+}
+
+section>div:nth-child(3){
+    background-size: cover;
+    background: url("../images/slide3.png") center;
+}
+
+section>div:nth-child(4){
+    background-size: cover;
+    background: url("../images/slide4.png") center;
+}
+
+@keyframes slider-animation {
+    0%,15%{
+        transform: translateX(0);
+    }
+    25%,40%{
+        transform: translateX(-25%);
+    }
+    50%,70%{
+        transform: translateX(-50);
+    }
+
+    80%,100%{
+        transform: translateX(-75%);
+    }
+}

@@ -1,0 +1,121 @@
+section>div{
+    width: 400px;
+    height: 400px;
+    border-radius: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: grey;
+}
+
+
+section>div>div{
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: red;
+}
+
+section>div>div>div{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+}
+
+section:nth-child(2){
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: purple;
+}
+
+section:nth-child(2)>h3{
+    font-size: 30px;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+
+}
+
+/*==============================================*/
+
+section:nth-child(3){
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    position: absolute;
+    top: 1500px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: cornflowerblue;
+}
+
+section:nth-child(3)>h3{
+    font-size: 30px;
+    position: absolute;
+    left: 25%;
+    bottom: 30%;
+
+}
+
+/*==============================================*/
+
+section:nth-child(4){
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    position: absolute;
+    top:2800px;
+    left: 0;
+    bottom: 10px;
+    right: 0;
+    margin: auto;
+    background: orangered;
+}
+
+section:nth-child(4)>ul{
+    font-size: 30px;
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    list-style: none;
+    align-content: center;
+}
+
+/*==============================================*/
+
+section:nth-child(5){
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    position: absolute;
+    top:2981.8px;
+    left: 0;
+    bottom: 10px;
+    right: 0;
+    margin: auto;
+}

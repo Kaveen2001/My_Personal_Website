@@ -1,0 +1,59 @@
+.navigation{
+    position: relative;
+    height: 500vh;
+}
+.navigation .card1{
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: red;
+}
+.navigation .card2{
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: darkblue;
+}
+.navigation .card3{
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: #292a25;
+}
+.navigation .card4{
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: #7d322b;
+}
+.p1{
+    font-size: 8em;
+    padding: 350px 0 220px 600px;
+    margin: 0 ;
+    background-color: white;
+    height: 40vh;
+
+
+}
+.p2{
+    font-size: 8em;
+    padding: 350px 0 220px 600px ;
+    margin: 0 ;
+    background-color: cornflowerblue;
+    height: 40vh;
+}
+.p3{
+    font-size: 8em;
+    padding: 350px 0 220px 600px ;
+    margin: 0 ;
+    background-color: #5e5952;
+    height: 40vh;
+
+}
+.p4{
+    font-size: 8em;
+    padding: 350px 0 220px 600px ;
+    margin: 0 ;
+    background-color: red;
+    height: 40vh;
+}

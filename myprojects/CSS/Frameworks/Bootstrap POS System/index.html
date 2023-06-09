@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+
+<!--Navigation Bar-->
+<header class="shadow-lg">
+<nav class="navbar bg-body-tertiary navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/pos%20sytem.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            KAVEEN POS SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="order.html">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Option
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Order Details</a></li>
+                        <li><a class="dropdown-item" href="order.html">Place Order</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="nav justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-sign-out-alt"></i>Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+
+<!--Slider-->
+<section>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/kavins%20cafe.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/food-02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/food-03.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/food-04.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!--food section-->
+<h3 class="text-center lead text-white display-4 m-5">FOOD ITEMS</h3>
+
+<!--card food items-->
+<div class="container mt-5 mb-5 " id="catalouge">
+    <div class="row row-cols-1 row-cols-md-4 g-4 m-4">
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/300.jpg" class="card-img-top" alt="..." style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Rice & Curry - බත් </h5>
+                    <h6 class="card-header text-muted">Item Code :- I001</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/hakka-noodles-recipe-500x500.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Noodles - නූඩ්ල්ස්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I002</h6>
+                    <p class="card-text">Rs.300/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/unnamed.jpg" class="card-img-top" alt="..." style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pasta - පැස්ටා </h5>
+                    <h6 class="card-header text-muted">Item Code :- I003</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/biriyani.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Biriyani - බිරියානි </h5>
+                    <h6 class="card-header text-muted">Item Code :- I004</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/sri-lanka_egg-hoppers_0.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hoppers - ආප්ප</h5>
+                    <h6 class="card-header text-muted">Item Code :- I006</h6>
+                    <p class="card-text">Rs.100/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/rsz_maxresdefault.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Parata - පරාටා </h5>
+                    <h6 class="card-header text-muted">Item Code :- I007</h6>
+                    <p class="card-text">Rs.120/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/pol-roti-coconut-roti.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pol Roti - පොල් රොටි </h5>
+                    <h6 class="card-header text-muted">Item Code :- I008</h6>
+                    <p class="card-text">Rs.150/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/idiyappa.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">String Hoppers - ඉදිආප්ප </h5>
+                    <h6 class="card-header text-muted">Item Code :- I009</h6>
+                    <p class="card-text">Rs.150/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg"
+                     class="card-img-top" alt="..." style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pizza - පීසා </h5>
+                    <h6 class="card-header text-muted">Item Code :- I010</h6>
+                    <p class="card-text">Rs.950/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 " style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/photo-1594212699903-ec8a3eca50f5.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Burguer - බර්ගර්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I011</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 " style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/mayonnaise-Sandwich-3.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sandwitch - සැන්ඩ්විච්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I012</h6>
+                    <p class="card-text">Rs.80/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 " style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/soup.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Soup - සුප්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I013</h6>
+                    <p class="card-text">Rs.300/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/spicy-chicken-curry.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chicken curry -කුකුල් මස්කරි</h5>
+                    <h6 class="card-header text-muted">Item Code :- I014</h6>
+                    <p class="card-text">Rs.400/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/Egg-Curry-3.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Egg Curry - බිත්තර ව්‍යංජන</h5>
+                    <h6 class="card-header text-muted">Item Code :- I015</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 " style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/Kerala-Fish-Curry.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Fish Curry - මාළු ව්‍යංජන</h5>
+                    <h6 class="card-header text-muted">Item Code :- I016</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--desert items section-->
+<h3 class="text-center lead text-white display-4 m-5">DESERTS ITEMS</h3>
+
+<!--card desert-->
+<div class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-4 g-4 m-4">
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/easy-vanilla.jpg" class="card-img-top " alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center ">
+                    <h5 class="card-title">Vanila Ice Cream - වැනිලා අයිස්ක්‍රීම්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I017</h6>
+                    <p class="card-text">Rs.150/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/cinnamon-chocolate-icecream-3517-500x500.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chocolate Ice Cream - චොකලට් අයිස්ක්රීම්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I018</h6>
+                    <p class="card-text">Rs.180/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/Dulce-De-Leche-Creme-Caramel-1-500x500.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Caramel Pudding - කැරමල් පුඩිං</h5>
+                    <h6 class="card-header text-muted">Item Code :- I019</h6>
+                    <p class="card-text">Rs.250/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/Are-coconut-and-other-dairy-free-yoghurts-healthy-iStock-904028894-500x409.jpg"
+                     class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Yogurt - යෝගට්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I020</h6>
+                    <p class="card-text">Rs.150/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/watalappan-delectable.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Watalappan - වටලප්පන් </h5>
+                    <h6 class="card-header text-muted">Item Code :- I021</h6>
+                    <p class="card-text">Rs.200/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/fruit-salad_thecozyapron_07-03-15_1.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Fruit Salad - සැලඩ් </h5>
+                    <h6 class="card-header text-muted">Item Code :- I022</h6>
+                    <p class="card-text">Rs.280/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/chocolate-lazy-cake-slices-side-view-500x375.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cake - කේක්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I023</h6>
+                    <p class="card-text">Rs.180/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer Section-->
+<footer class="container-fluid footer">
+    <h6 class="text-center text-muted mt-3"> Copyright © 2023 All right reserved </br> Website Powered BY KAVEEN SEWHAN</h6>
+</footer>
+
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

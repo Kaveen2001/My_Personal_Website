@@ -1,0 +1,88 @@
+section {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section > div {
+    background-color: rebeccapurple;
+    width: 250px;
+    height: 50px;
+    right: 220px;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 2s;
+}
+
+section > div > h3 {
+    position: absolute;
+    width: max-content;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+    height: max-content;
+}
+
+section > div:hover {
+    right: 10px;
+    color: white;
+    background-color: blue;
+}
+
+section > div > i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    right: 10px;
+    height: max-content;
+    margin: auto;
+}
+
+/*
+section{
+    width: 250px;
+    height: 490px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 200px;
+}
+
+section>div{
+    left: 0;
+    height: 40px;
+    position: relative;
+    background-color: darkred;
+    transition: all 2s;
+    color: white;
+}
+
+section>div>h3{
+    margin: 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+section>div>i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 27px;
+    color: white;
+}
+
+section>div:hover{
+    background-color: red;
+    left: 200px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 2s;
+}*/

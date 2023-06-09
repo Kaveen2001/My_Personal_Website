@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+
+<!--Navigation Bar-->
+<header class="shadow-lg">
+<nav class="navbar bg-body-tertiary navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/pos%20sytem.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            KAVEEN POS SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a id="linkDashboard" class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="linkCustomer" class="nav-link active" aria-current="page" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a id="linkItem" class="nav-link active" aria-current="page" href="#">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a id="linkOrder" class="nav-link active" aria-current="page" href="#">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Option
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Order Details</a></li>
+                        <li><a id="linkPlaceOrder" class="dropdown-item" href="#">Place Order</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="nav justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-sign-out-alt"></i>Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+
+<!--Slider-->
+<section id="sliderContent">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/kavins%20cafe.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/food-02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/food-03.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/food-04.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!--food section-->
+<h3 id="foodsectionContent" class="text-center lead text-white display-4 m-5">FOOD ITEMS</h3>
+
+<!--card food items-->
+<div class="container mt-5 mb-5 " id="catalouge">
+    <div class="row row-cols-1 row-cols-md-4 g-4 m-4">
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/300.jpg" class="card-img-top" alt="..." style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Rice & Curry - බත් </h5>
+                    <h6 class="card-header text-muted">Item Code :- I001</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/hakka-noodles-recipe-500x500.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Noodles - නූඩ්ල්ස්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I002</h6>
+                    <p class="card-text">Rs.300/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/unnamed.jpg" class="card-img-top" alt="..." style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pasta - පැස්ටා </h5>
+                    <h6 class="card-header text-muted">Item Code :- I003</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/biriyani.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Biriyani - බිරියානි </h5>
+                    <h6 class="card-header text-muted">Item Code :- I004</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/sri-lanka_egg-hoppers_0.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hoppers - ආප්ප</h5>
+                    <h6 class="card-header text-muted">Item Code :- I006</h6>
+                    <p class="card-text">Rs.100/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/rsz_maxresdefault.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Parata - පරාටා </h5>
+                    <h6 class="card-header text-muted">Item Code :- I007</h6>
+                    <p class="card-text">Rs.120/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/pol-roti-coconut-roti.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pol Roti - පොල් රොටි </h5>
+                    <h6 class="card-header text-muted">Item Code :- I008</h6>
+                    <p class="card-text">Rs.150/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/idiyappa.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">String Hoppers - ඉදිආප්ප </h5>
+                    <h6 class="card-header text-muted">Item Code :- I009</h6>
+                    <p class="card-text">Rs.150/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg"
+                     class="card-img-top" alt="..." style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pizza - පීසා </h5>
+                    <h6 class="card-header text-muted">Item Code :- I010</h6>
+                    <p class="card-text">Rs.950/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 " style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/photo-1594212699903-ec8a3eca50f5.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Burguer - බර්ගර්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I011</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 " style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/mayonnaise-Sandwich-3.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sandwitch - සැන්ඩ්විච්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I012</h6>
+                    <p class="card-text">Rs.80/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 " style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/soup.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Soup - සුප්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I013</h6>
+                    <p class="card-text">Rs.300/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/spicy-chicken-curry.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chicken curry -කුකුල් මස්කරි</h5>
+                    <h6 class="card-header text-muted">Item Code :- I014</h6>
+                    <p class="card-text">Rs.400/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/Egg-Curry-3.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Egg Curry - බිත්තර ව්‍යංජන</h5>
+                    <h6 class="card-header text-muted">Item Code :- I015</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 " style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/Kerala-Fish-Curry.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Fish Curry - මාළු ව්‍යංජන</h5>
+                    <h6 class="card-header text-muted">Item Code :- I016</h6>
+                    <p class="card-text">Rs.350/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--desert items section-->
+<h3 id="desertsectionContent" class="text-center lead text-white display-4 m-5">DESERTS ITEMS</h3>
+
+<!--card desert-->
+<div id="carddesertContent" class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-4 g-4 m-4">
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/easy-vanilla.jpg" class="card-img-top " alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center ">
+                    <h5 class="card-title">Vanila Ice Cream - වැනිලා අයිස්ක්‍රීම්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I017</h6>
+                    <p class="card-text">Rs.150/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/cinnamon-chocolate-icecream-3517-500x500.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chocolate Ice Cream - චොකලට් අයිස්ක්රීම්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I018</h6>
+                    <p class="card-text">Rs.180/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/Dulce-De-Leche-Creme-Caramel-1-500x500.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Caramel Pudding - කැරමල් පුඩිං</h5>
+                    <h6 class="card-header text-muted">Item Code :- I019</h6>
+                    <p class="card-text">Rs.250/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/Are-coconut-and-other-dairy-free-yoghurts-healthy-iStock-904028894-500x409.jpg"
+                     class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Yogurt - යෝගට්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I020</h6>
+                    <p class="card-text">Rs.150/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/watalappan-delectable.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Watalappan - වටලප්පන් </h5>
+                    <h6 class="card-header text-muted">Item Code :- I021</h6>
+                    <p class="card-text">Rs.200/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/fruit-salad_thecozyapron_07-03-15_1.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Fruit Salad - සැලඩ් </h5>
+                    <h6 class="card-header text-muted">Item Code :- I022</h6>
+                    <p class="card-text">Rs.280/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                <img src="assets/icon/chocolate-lazy-cake-slices-side-view-500x375.jpg" class="card-img-top" alt="..."
+                     style="border-radius: 25px 0 25px 0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cake - කේක්</h5>
+                    <h6 class="card-header text-muted">Item Code :- I023</h6>
+                    <p class="card-text">Rs.180/=</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success  mx-auto d-md-block">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Customer Manage Content-->
+<main id="customerContent">
+    <section class="container">
+        <div class="rounded-3 p-3" style="background-color: #DDE4F0; margin-top: 30px; height: auto; width:auto">
+            <h1 class="text-lg-start mb-3"><i class="fas fa-users"></i>Customer</h1>
+            <div class="row align-items-start pb-3">
+                <div class="col-4">
+                    <h4>Customer Search</h4>
+                    <div class="input-group mb-3 style=height: 10px">
+                        <input type="text" class="form-control" placeholder="Input CusID/CusName Here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-success" type="button" id="btnSearch">
+                            <i class="bi bi-search m-2"></i>Search</button>
+                    </div>
+                </div>
+
+               <!-- <div>
+                    <button class="btn-danger">Delete</button>
+                    <button class="btn-primary">Details</button>
+                    <button class="btn-success">Clear</button>
+                </div>-->
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerId">Customer ID :</label>
+                        <input class="form-control" id="txtCustomerId" type="text" placeholder="Customer ID">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerName">Customer Name :</label>
+                        <input class="form-control" id="txtCustomerName" type="text" placeholder="Customer Name">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Customer Address :</label>
+                        <input class="form-control" id="txtCustomerAddress" type="text" placeholder="Customer Address">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerMobileNo">Customer Mobile No :</label>
+                        <input class="form-control" id="txtCustomerMobileNo" type="tel" placeholder="Customer Mobile No">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#newCustomer"
+                        data-bs-toggle="modal" id="btnAddCustomer">Add Customer
+                </button>
+                <button class="btn btn-warning position-relative m-2">View All Customers</button>
+                <button class="btn btn-success position-relative m-2" data-bs-target="#updateCustomer"
+                        data-bs-toggle="modal">Update Customer
+                </button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteCustomer"
+                        data-bs-toggle="modal">Delete Customer
+                </button>
+            </div>
+
+            <h3 id="CustomerDetailsContent" class="text-center lead display-4 m-4 text-black">CUSTOMER DETAILS</h3>
+            <div class="row align-items-center">
+                <div class="col-12 mt-2">
+                    <table class="table table-dark table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Customer Address</th>
+                            <th scope="col">Customer Mobile No</th>
+                        </tr>
+                        </thead>
+                        <tbody id="cusTable">
+                        <tr>
+                            <td>C001</td>
+                            <td>Kaveen</td>
+                            <td>Kottawa</td>
+                            <td>076-0410987</td>
+                        </tr>
+                        <tr>
+                            <td>C002</td>
+                            <td>Sudath</td>
+                            <td>Galle</td>
+                            <td>076-45676521</td>
+                        </tr>
+                        <tr>
+                            <td>C003</td>
+                            <td>Sanul</td>
+                            <td>Matara</td>
+                            <td>075-9875678</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Modal New Customer -->
+<!--<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="newCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">New Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerId">Customer ID :</label>
+                        <input class="form-control" id="txtCustomerId" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerName">Customer Name :</label>
+                        <input class="form-control" id="txtCustomerName" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Customer Address :</label>
+                        <input class="form-control" id="txtCustomerAddress" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerMobileNo">Customer Mobile No :</label>
+                        <input class="form-control" id="txtCustomerMobileNo" type="tel">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnSaveCustomer" type="submit">Save Customer</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- Modal Update Customer -->
+<!--<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Update Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchCustomerId">Customer ID :</label>
+                        <input class="form-control" id="searchCustomerId" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="name">Customer Name :</label>
+                        <input class="form-control" id="name" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="address">Customer Address :</label>
+                        <input class="form-control" id="address" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="contactNo">Customer Mobile No :</label>
+                        <input class="form-control" id="contactNo" type="number">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-dismiss="modal" type="submit">Update Customer</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- Modal Delete Customer -->
+<!--<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Delete Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchCId">Customer ID :</label>
+                        <input class="form-control" id="searchCId" type="text">
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledName">Customer Name :</label>
+                            <input class="form-control" id="disabledName" type="text">
+                        </div>
+
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledAddress">Customer Address :</label>
+                            <input class="form-control" id="disabledAddress" type="text">
+                        </div>
+
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledMobileNo">Customer Mobile No :</label>
+                            <input class="form-control" id="disabledMobileNo" type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-target="#confirmation" data-bs-toggle="modal" type="submit">Delete Customer</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--Modal delete confirmation massage-->
+<!--<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="confirmMessage" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModal">Confirmation Alert</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">Are you sure whether you want to delete this customer?</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal" type="submit">Yes</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="reset">No</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--Item Manage Content-->
+<main id="itemContent">
+    <section class="container">
+        <div class="rounded-3 p-3" style="background-color: #DDE4F0; margin-top: 30px; height:auto; width: auto">
+            <h1 class="text-lg-start mb-3"><i class="fas fa-cubes"></i>Item</h1>
+
+            <div class="row align-items-start pb-3">
+                <div class="col-4">
+                    <h4>Item Search</h4>
+                    <div class="input-group mb-3 style=height: 10px">
+                        <input type="text" class="form-control" placeholder="Input Item Code/Name Here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-success" type="button" id="button-addon2">
+                            <i class="bi bi-search m-2"></i>Search</button>
+                    </div>
+                </div>
+
+                <!--<div>
+                    <button class="btn-danger">Delete</button>
+                    <button class="btn-primary">Details</button>
+                    <button class="btn-success">Clear</button>
+                </div>-->
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemCode">Item Code :</label>
+                        <input class="form-control" id="txtItemCode" type="text" placeholder="Item Code">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemName">Item Name :</label>
+                        <input class="form-control" id="txtItemName" type="text" placeholder="Item Name">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemPrice">Item Price :</label>
+                        <input class="form-control" id="txtItemPrice" type="text" placeholder="Item Price">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemQuantity">Item Quantity :</label>
+                        <input class="form-control" id="txtItemQuantity" type="number" placeholder="Item Quantity">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#newItem"
+                        data-bs-toggle="modal" id="btnNewItem">New Item
+                </button>
+                <button class="btn btn-warning position-relative m-2">View All Items</button>
+                <button class="btn btn-success position-relative m-2" data-bs-target="#updateItem"
+                        data-bs-toggle="modal">Update Item
+                </button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteItem"
+                        data-bs-toggle="modal">Delete Item
+                </button>
+            </div>
+
+            <h3 id="ItemDetailsContent" class="text-center lead text-black display-4 m-4">ITEM DETAILS</h3>
+            <div class="row align-items-center">
+                <div class="col-12 mt-2">
+                    <table class="table table-dark table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">Item Code</th>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Item Price</th>
+                            <th scope="col">Item Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>I001</td>
+                            <td>Rice & Curry</td>
+                            <td>350.00</td>
+                            <td>01</td>
+                        </tr>
+                        <tr>
+                            <td>I002</td>
+                            <td>Noodles</td>
+                            <td>300.00</td>
+                            <td>01</td>
+                        </tr>
+                        <tr>
+                            <td>I003</td>
+                            <td>Pasta</td>
+                            <td>350.00</td>
+                            <td>01</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Modal New Item -->
+<!--<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="newItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">New Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemCode">Item Code :</label>
+                        <input class="form-control" id="txtItemCode" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemName">Item Name :</label>
+                        <input class="form-control" id="txtItemName" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemPrice">Item Price :</label>
+                        <input class="form-control" id="txtItemPrice" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemQuantity">Item Quantity :</label>
+                        <input class="form-control" id="txtItemQuantity"
+                               type="number">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnSaveItem" type="submit">Save Item</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- Modal Update Item -->
+<!--<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Update Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchItemCode">Item Code :</label>
+                        <input class="form-control" id="searchItemCode" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="itemName">Item Name :</label>
+                        <input class="form-control" id="itemName" type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="itemPrice">Item Price :</label>
+                        <input class="form-control" id="itemPrice" type="number">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="itemQuantity">Item Quantity :</label>
+                        <input class="form-control" id="itemQuantity" type="number">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-dismiss="modal" type="submit">Update Item</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- Modal Delete Item -->
+<!--<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Delete Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchCode">Item Code :</label>
+                        <input class="form-control" id="searchCode" type="text">
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledItemName">Item Name :</label>
+                            <input class="form-control" id="disabledItemName" type="text">
+                        </div>
+
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledItemPrice">Item Price :</label>
+                            <input class="form-control" id="disabledItemPrice" type="number">
+                        </div>
+
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledItemQuantity">Item Quantity :</label>
+                            <input class="form-control" id="disabledItemQuantity" type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-target="#confirmation" data-bs-toggle="modal" type="submit">Delete Item</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--Modal delete confirmation massage-->
+<!--<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="confirmation" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmation Alert</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">Are you sure whether you want to delete this item?</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal" type="submit">Yes</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="reset">No</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--Place Order Manage Content-->
+
+<!--Invoice Details-->
+<div id="invoiceContent" class="container mt-5 mb-5">
+    <div class="row mt-4">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+            <div class="card">
+                <div class="card-header text-center display-6 text-black">INVOICE DETAILS</div>
+                <div class="card-body">
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                            <label>Order ID</label>
+                            <input type="text" class="form-control" id="orderId">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                            <label>Order Date</label>
+                            <input type="date" class="form-control" id="orderDate">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                            <label>Customer ID</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>-Select Customer</option>
+                                <option value="1">C001</option>
+                                <option value="2">C002</option>
+                                <option value="3">C003</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                            <label>Customer Name</label>
+                            <input type="text" class="form-control" id="custName" disabled>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                            <label>Customer Address</label>
+                            <input type="text" class="form-control" id="custAddr" disabled>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                            <label>Customer Mobile No</label>
+                            <input type="text" class="form-control" id="mobileNo" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Payments Details-->
+<div id="paymentsContent" class="col-lg-6 col-md-12 col-sm-12 mt-4">
+    <div class="card">
+        <div class="card-header text-center display-6 text-black">PAYMENT DETAILS</div>
+        <div class="card-body">
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                    <label>Total (Rs.)</label>
+                    <input type="text" class="form-control" id="total" disabled>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                    <label>No of Items</label>
+                    <input type="text" class="form-control" id="noOfItem" disabled>
+                </div>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                    <label>Cash (Rs.)</label>
+                    <input type="text" class="form-control" id="cash" disabled>
+
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                    <label>Balance (Rs.)</label>
+                    <input type="text" class="form-control" id="balance" disabled>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                        <button type="button" class="btn btn-success ">Place Order</button>
+                        <button type="button" class="btn btn-danger ">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Add to Cart-->
+<div id="addtocartContent" class="row mt-4">
+    <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+        <div class="card">
+            <div class="card-header text-center display-6 text-black">ADD TO CART</div>
+            <div class="card-body">
+                <div class="row mt-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                        <label>Item ID</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>-Select Item</option>
+                            <option value="1">I001</option>
+                            <option value="2">I002</option>
+                            <option value="3">I003</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                        <label>Item Name</label>
+                        <input type="text" class="form-control" id="iteName" disabled>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                        <label>Available Qty</label>
+                        <input type="text" class="form-control" id="avilable" disabled>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                        <label>Unit Price</label>
+                        <input type="text" class="form-control" id="uprice" disabled>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+                        <label>Buy Qty</label>
+                        <input type="text" class="form-control" id="buyqty">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 justify-content-between mt-4">
+                        <button type="button" class="btn btn-success ">Add to Cart</button>
+                        <button type="button" class="btn btn-danger ">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Item Details-->
+    <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+        <table class="table text-white" style="font-family: 'Segoe UI'">
+            <h4 class="display-6 m-5 text-center text-white">ORDER DETAILS</h4>
+            <tr>
+                <th>Item ID</th>
+                <th>Item Name</th>
+                <th>Unit Price (Rs.)</th>
+                <th>Available</th>
+                <th>Buy Qty</th>
+            </tr>
+            <tr>
+                <td>I001</td>
+                <td>Rice & Curry</td>
+                <td>350.00</td>
+                <td>40</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>I002</td>
+                <td>Noodles</td>
+                <td>300.00</td>
+                <td>50</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>I003</td>
+                <td>Pasta</td>
+                <td>350.00</td>
+                <td>35</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--Footer Section-->
+<footer id="footersectionContent" class="container-fluid footer">
+    <h6 class="text-center text-muted mt-3"> Copyright © 2023 All right reserved </br> Website Powered BY KAVEEN SEWHAN</h6>
+</footer>
+
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/jQuery/jQuery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

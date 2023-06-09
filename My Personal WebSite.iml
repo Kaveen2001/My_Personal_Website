@@ -4,5 +4,12 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="scrollreveal" level="application" />
+    <orderEntry type="library" name="typed.js" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="animate.css" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery-circle-progress" level="application" />
   </component>
 </module>

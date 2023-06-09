@@ -1,159 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Meta Data Added-->
     <meta charset="UTF-8">
-    <meta content="Kaveen Sewhan" name="author"/>
-    <meta content="Kaveen Sewhan" name="owner"/>
-    <meta content="black" name="theme-color">
-    <meta content="Kaveen Sewhan - FullStack Software Engineer" property="og:title"/>
-    <meta content="I am a software engineer with experience in full-stack development, web development,mobile app development, cloud computing, and DevOps. Visit my portfolio website to see my work and learn more about my skills."
-          name="description"/>
+    <meta name="author" content="Kaveen Sewhan"/>
+    <meta name="owner" content="Kaveen Sewhan"/>
+    <meta name="keywords" content="Kaveen, kaveen, Kaveen Sewhan, Software Engineer">
+    <meta name="description" content="I am a Software Engineer with experience in Full-Stack Development, Web Development,Mobile app Development, Cloud Computing, and DevOps. Visit my portfolio website to see my work and learn more about my skills."/>
+    <meta property="og:title" content="Kaveen Sewhan - FullStack Software Engineer"/>
     <meta content="https://developer.mozilla.org/static/img/opengraph-logo.png" property="og:image"/>
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
+    <meta name="theme-color" content="gray">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <!-- <link rel="stylesheet" href="css/main.css">-->
-    <title>RESPONSIVE PERSONAL WEBSITE DESIGN</title>
+
+    <title>KAVEEN SEWHAN MANAGE</title>
+
+    <!--Links Added.-->
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="assets/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="assets/css/carousel.css">-->
+
 </head>
 <body>
+
+<div id="preloader">
+    <img src="assets/gif/preloader.gif" alt="preloader-gif">
+</div>
+
 <!--Header Section Design-->
-<!--<header>
-    <div class="site-logo">
-        <img src="./assets/img/logo-main.png" alt="Logo Image" width="150px">
-    </div>
-
-    <nav>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">What I Do</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Education</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Project</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="my-resume-btn">
-        <button class="download-resume-btn">
-            My Resume
-        </button>
-    </div>
-</header>-->
-<header class="header">
-    <img alt="Logo Image" src="assacts/logo/main%20logo.png" width="150px"><br>
-    <a class="logo" href="#">Kaveen Sewhan</a>
+<header id="headerSection">
     <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#aboutMe">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#services">Services</a>
-        <a href="#myProjects">My Projects</a>
-        <a href="#contactUs">Contact Us</a>
+        <img class="mainLogo" alt="Logo Image" src="assets/logo/main%20logo.png" width="150"><br>
+        <a href="#homeSection" class="active">Home</a>
+        <a href="#gallerySection">Gallery</a>
+        <a href="#aboutMeSection">About Me</a>
+        <a href="#skillsSection">Skills</a>
+        <a href="#educationSection">Education</a>
+        <a href="#servicesSection">Services</a>
+        <a href="#myProjectsSection">My Projects</a>
+        <a href="#contactUsSection">Contact Us</a>
     </nav>
 </header>
 
 <!--========================================================================================================-->
 
 <!--Home Section Design-->
-<section align="center" class="home" id="home">
+<section id="homeSection">
     <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Kaveen Sewhan</h1>
-        <h3>from Sri Lanka</h3>
+        <h3>from Sri Lanka</h3><br>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Dolorum eum iste iusto provident quidem quo similique sit voluptatum? Explicabo, officia.</p>
 
         <section align="center" class="social-media" id="socialMedia">
-            <div class="social-media">
-                <!--<a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="#"><i class='bx bxl-whatsapp-square'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>-->
-                <span><img alt="" height="25" src="assacts/logo/social%20media/whatsapp.png" width="25"></span>
-                <span><img alt="" height="25" src="assacts/logo/social%20media/facebook.png" width="25"></span>
-                <span><img alt="" height="25" src="assacts/logo/social%20media/instagram.jpg" width="25"></span>
-                <span><img alt="" height="25" src="assacts/logo/social%20media/youtube.png" width="25"></span>
-                <span><img alt="" height="25" src="assacts/logo/social%20media/github.png" width="25"></span>
-                <span><img alt="" height="25" src="assacts/logo/social%20media/linkedin.png" width="25"></span>
+            <div class="social-media" data-aos="flip-right">
+                <div class="social-icon">
+                    <a href="#"><img alt="" height="25" src="assets/logo/social%20media/whatsapp.png" width="25"></a>
+                    <span>Whatsapp</span>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><img alt="" height="25" src="assets/logo/social%20media/facebook.png" width="25"></a>
+                    <span>Facebook</span>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><img alt="" height="25" src="assets/logo/social%20media/instagram.jpg" width="25"></a>
+                    <span>Instagram</span>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><img alt="" height="25" src="assets/logo/social%20media/youtube.png" width="25"></a>
+                    <span>Youtube</span>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><img alt="" height="25" src="assets/logo/social%20media/github.png" width="25"></a>
+                    <span>Github</span>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><img alt="" height="25" src="assets/logo/social%20media/linkedin.png" width="25"></a>
+                    <span>Linkedin</span>
+                </div>
             </div>
+            <a href="#" class="btnHireMe">Hire Me</a>
         </section>
     </div>
-    <button id="Home-more">Hire Me.</button>
 
     <div class="home-img">
-        <img alt="Home Page Image" src="assacts/images/profile%20photo/home.jpg" width="300">
+        <img alt="Home Page Image" src="assets/images/profile%20photo/home.jpg" width="250" align="right">
     </div>
 </section>
+<br>
 
 <!--========================================================================================================-->
 
 <!--Gallery Section Design-->
-<section align="center" id="gallery">
-    <h2 align="center"><u>My Gallery</u></h2>
+<section align="center" id="gallerySection">
+    <h2 align="left" class="heading"><u>My<span> Gallery</span></u></h2>
     <br>
     <div class="gallery-content">
-    <span>
-        <img src="assacts/images/gallery/1.jpg" alt="galleryImg01.jpg" width="100"border="1">
-    </span>
-        <span>
-        <img src="assacts/images/gallery/2.jpg" alt="galleryImg02.jpg" width="100"border="1">
-    </span>
-        <span>
-        <img src="assacts/images/gallery/3.jpg" alt="galleryImg03.jpg" width="100"border="1">
-    </span>
-        <span>
-        <img src="assacts/images/gallery/4.jpg" alt="galleryImg04.jpg" width="180"border="1">
-    </span>
-        <br>
-        <span>
-        <img src="assacts/images/gallery/5.jpg" alt="galleryImg05.jpg" width="180"border="1">
-    </span>
-        </span>
-        <span>
-        <img src="assacts/images/gallery/6.jpg" alt="galleryImg06.jpg" width="180"border="1">
-    </span>
-        </span>
-        <span>
-        <img src="assacts/images/gallery/7.jpg" alt="galleryImg07.jpg" width="180"border="1">
-    </span>
-        </span>
-        <span>
-        <img src="assacts/images/gallery/8.jpg" alt="galleryImg08.jpg" width="180"border="1">
-    </span>
+        <div class="gallery-slider">
+        <span style="--i:1"> <img src="assets/images/gallery/1.jpg" alt="gallery-image01"></span>
+        <span style="--i:2"> <img src="assets/images/gallery/2.jpg" alt="gallery-image02"></span>
+        <span style="--i:3"> <img src="assets/images/gallery/3.jpg" alt="gallery-image03"></span>
+        <span style="--i:4"> <img src="assets/images/gallery/4.jpg" alt="gallery-image04"></span>
+        <span style="--i:5"> <img src="assets/images/gallery/5.jpg" alt="gallery-image05"></span>
+        <span style="--i:6"> <img src="assets/images/gallery/6.jpg" alt="gallery-image06"></span>
+        <span style="--i:7"> <img src="assets/images/gallery/7.jpg" alt="gallery-image07"></span>
+        <span style="--i:8"> <img src="assets/images/gallery/8.jpg" alt="gallery-image08"></span>
+        </div>
     </div>
     <br>
-    <button id="gallery-more">See More..</button>
+    <a href="#" class="btn">See More</a>
 </section>
 
 <!--========================================================================================================-->
 
 <!--About Me Section Design-->
-<section class="aboutMe" id="aboutMe">
-    <div class="aboutMe-content" align="center">
-        <h2 class="heading"><u><span>About Me</span></u></h2>
-        <div align="center" class="aboutMe-img">
-            <img alt="About Me Image" src="assacts/images/profile%20photo/aboutme.jpg" width="250">
-        </div>
-        <h2>I'm Fullstack Developer & Web Designer in Sri Lanka.</h2>
-        <h2>I'm 22 years old.</h2>
+<section class="aboutMe-section" id="aboutMeSection">
+    <div class="aboutMe-img">
+        <img alt="About Me Image" src="assets/images/profile%20photo/aboutme.jpg" width="250" align="left">
+    </div>
+    <div class="aboutMe-content">
+        <h2 class="heading"><u>About<span> Me</span></u></h2>
+        <h3>I'm Fullstack Developer & Web Designer in Sri Lanka.</h3><br>
+        <h3>I'm 23 years old.</h3>
         <p>As a student at the Institute of Software Engineering (IJSE), I am dedicated to mastering the art of
             software development. My expertise encompasses a wide range of technical skills including Java
             programming, database management systems, architectural and design patterns, and UI/UX design. I am
@@ -162,16 +138,16 @@
             firm believer in the power of continuous learning and am excited to bring my skills, passion and
             enthusiasm to a forward-thinking organization.</p>
         <br>
-        <a href="assacts/pdf/CV.pdf" download="My Personal CV">Download CV</a><br>
+        <a href="assets/pdf/CV.pdf" download="My Personal CV" class="btn">Download CV</a><br>
     </div>
 </section>
 
 <!--========================================================================================================-->
 
 <!--Skills Section Design-->
-<section class="skills" id="skills">
+<section class="skills-section" id="skillsSection">
     <div class="skills-content">
-        <h1 class="heading"><u><span>My Skills</span></u></h1>
+        <h1 class="heading"><u>My<span> Skills</span></u></h1>
         <p align="center">What I know,
             I have been successfully completing a number of projects in the above areas for over two years and have received good feedback.</p>
     </div>
@@ -180,35 +156,35 @@
     <br>
     <div id="langLogos" align="center">
     <span>
-        <img src="assacts/logo/prolan/c.png" alt="c.png" width="100">
+        <img src="assets/logo/prolan/c.png" alt="c.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/prolan/c++.png" alt="c++.png" width="90">
+        <img src="assets/logo/prolan/c++.png" alt="c++.png" width="90">
     </span>
         <span>
-        <img src="assacts/logo/prolan/cshap.png" alt="c#.png" width="150">
+        <img src="assets/logo/prolan/cshap.png" alt="c#.png" width="150">
     </span>
         <span>
-        <img src="assacts/logo/prolan/java.png" alt="java.png" width="100">
+        <img src="assets/logo/prolan/java.png" alt="java.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/prolan/python.jpg" alt="c#.jpg" width="100">
+        <img src="assets/logo/prolan/python.jpg" alt="c#.jpg" width="100">
     </span>
         <br>
         <span>
-        <img src="assacts/logo/prolan/mysql.png" alt="mysql.png" width="100">
+        <img src="assets/logo/prolan/mysql.png" alt="mysql.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/prolan/html.jpg" alt="c++.png" width="100">
+        <img src="assets/logo/prolan/html.jpg" alt="c++.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/prolan/css.png" alt="c#.png" width="100">
+        <img src="assets/logo/prolan/css.png" alt="c#.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/prolan/php.png" alt="java.png" width="100">
+        <img src="assets/logo/prolan/php.png" alt="java.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/prolan/js.jpg" alt="c#.jpg" width="100">
+        <img src="assets/logo/prolan/js.jpg" alt="c#.jpg" width="100">
     </span>
     </div>
     <br>
@@ -216,89 +192,90 @@
     <br>
     <div id="technologyLogos" align="center">
       <span>
-        <img src="assacts/logo/use%20techno/intelje.jpg" alt="c.png" width="100">
+        <img src="assets/logo/use%20techno/intelje.jpg" alt="c.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/use%20techno/netbeans.jpg" alt="c++.png" width="90">
+        <img src="assets/logo/use%20techno/netbeans.jpg" alt="c++.png" width="90">
     </span>
         <span>
-        <img src="assacts/logo/use%20techno/vscode.jpg" alt="c#.png" width="150">
+        <img src="assets/logo/use%20techno/vscode.jpg" alt="c#.png" width="150">
     </span>
         <span>
-        <img src="assacts/logo/use%20techno/javafx.png" alt="java.png" width="100">
+        <img src="assets/logo/use%20techno/javafx.png" alt="java.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/use%20techno/figma.png" alt="c#.jpg" width="100">
+        <img src="assets/logo/use%20techno/figma.png" alt="c#.jpg" width="100">
     </span>
         <br>
         <span>
-        <img src="assacts/logo/use%20techno/hibernate.png" alt="mysql.png" width="100">
+        <img src="assets/logo/use%20techno/hibernate.png" alt="mysql.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/use%20techno/springboot.png" alt="c++.png" width="100">
+        <img src="assets/logo/use%20techno/springboot.png" alt="c++.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/use%20techno/react%20native.png" alt="c#.png" width="100">
+        <img src="assets/logo/use%20techno/react%20native.png" alt="c#.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/use%20techno/flutter.png" alt="java.png" width="100">
+        <img src="assets/logo/use%20techno/flutter.png" alt="java.png" width="100">
     </span>
         <span>
-        <img src="assacts/logo/use%20techno/angular.png" alt="c#.jpg" width="100">
+        <img src="assets/logo/use%20techno/angular.png" alt="c#.jpg" width="100">
     </span>
     </div>
 </section>
+<br>
 
 <!--========================================================================================================-->
 
 <!--Education Section Design-->
-<section class="education" id="education">
+<section class="education-section" id="educationSection">
     <div class="education-content">
-        <h1 class="heading"><u><span>Education</span></u></h1>
+        <h1 class="heading"><u><span>E</span>d<span>u</span>c<span>a</span>t<span>i</span>o<span>n</span></u></h1>
     </div>
 
     <div align="center" id="educationPlaces">
         <span>
             <h2>Institute of Software Engineering <b>-IJSE</b><br>(2022-In Present)</h2>
-            <img src="assacts/logo/my%20schools/ijse.png" alt="ijse.png" width="150">
+            <img src="assets/logo/my%20schools/ijse.png" alt="ijse.png" width="150">
             <p>Currently studying at IJSE - Institute of Software Engineering,Panadura,SriLanka.</p>
         </span>
         <br>
         <span>
             <h2>ST.Jhon's College <b>-Nugegoda</b><br>(2018-2020)</h2>
-            <img src="assacts/logo/my%20schools/jhon.jpg" alt="jhon.jpg" width="150">
+            <img src="assets/logo/my%20schools/jhon.jpg" alt="jhon.jpg" width="150">
             <p>Completed G.C.E Advanced Level Examination</p>
                 <P>2020 in Commerce Stream.</P>
         </span>
         <br>
         <span>
             <h2>ST.Servatius College <b>-Matara</b><br>(2012-2017)</h2>
-            <img src="assacts/logo/my%20schools/servatius.jpg" alt="servatius.jpg" width="150">
+            <img src="assets/logo/my%20schools/servatius.jpg" alt="servatius.jpg" width="150">
             <p>Completed G.C.E Ordinary Level Examination</p>
                 <P>in 2017 Year.</P>
         </span>
         <br>
         <span>
             <h2>Telijjawila Royal College <b>-Telijjawila</b><br>(2007-2011)</h2>
-            <img src="assacts/logo/my%20schools/royal.jpg" alt="royal.jpg" width="150">
+            <img src="assets/logo/my%20schools/royal.jpg" alt="royal.jpg" width="150">
             <p>Primary Education & Completed 5 Scholarship Examination</p>
                 <P>in 2011 Year.</P>
         </span>
         <br>
     </div>
 </section>
+<br>
 
 <!--========================================================================================================-->
 
 <!--Services Section Design-->
-<section class="services" id="services">
-    <h1 class="heading"><u><span>My Services</span></u></h1>
+<section class="services-section" id="servicesSection">
+    <h1 class="heading"><u>My<span> Services</span></u></h1>
 
-    <div align="center" class="services-container">
+    <div class="services-container" align="center">
         <div class="services-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img src="assacts/images/services/standAlone.png" alt="royal.jpg" width="150">
             <h2>Stand Alone Application Development</h2>
+            <img src="assets/images/services/standAlone.png" alt="royal.jpg" width="150">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
             <a class="btn" href="#">View More</a>
@@ -306,9 +283,8 @@
         <br>
 
         <div class="services-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img src="assacts/images/services/web.png" alt="royal.jpg" width="150">
             <h2>Web Site & Web Application Development</h2>
+            <img src="assets/images/services/web.png" alt="royal.jpg" width="150">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
             <a class="btn" href="#">View More</a>
@@ -316,266 +292,362 @@
         <br>
 
         <div class="services-box">
-            <!--<i class='bx bx-code-alt'></i>-->
             <h2>UI/UX Designing</h2>
-            <img src="assacts/images/services/ui.png" alt="royal.jpg" width="150">
+            <img src="assets/images/services/ui.png" alt="royal.jpg" width="150">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
+            <a class="btn" href="#">View More</a>
         </div>
         <br>
 
         <div class="services-box">
-            <!--<i class='bx bx-code-alt'></i>-->
             <h2>Database Management</h2>
-            <img src="assacts/images/services/database.png" alt="royal.jpg" width="150">
+            <img src="assets/images/services/database.png" alt="royal.jpg" width="150">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
+            <a class="btn" href="#">View More</a>
         </div>
         <br>
 
         <div class="services-box">
-            <!--<i class='bx bx-code-alt'></i>-->
             <h2>Mobile Application Development</h2>
-            <img src="assacts/images/services/mobile.jpg" alt="royal.jpg" width="150">
+            <img src="assets/images/services/mobile.jpg" alt="royal.jpg" width="150">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
+            <a class="btn" href="#">View More</a>
         </div>
         <br>
 
         <div class="services-box">
-            <!--<i class='bx bx-code-alt'></i>-->
             <h2>Graphic Designing</h2>
-            <img src="assacts/images/services/graphic.jpg" alt="royal.jpg" width="150">
+            <img src="assets/images/services/graphic.jpg" alt="royal.jpg" width="150">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
+            <a class="btn" href="#">View More</a>
         </div>
         <br>
     </div>
 </section>
+<br>
 
 <!--========================================================================================================-->
 
 <!--Jobs & Experience Section Design-->
-<section class="jobs&Experience" id="jobs&Experience">
-    <h1 class="heading"><u><span>Jobs & Experience</span></u></h1>
+<section class="jobs&Experience-section" id="jobs&ExperienceSection">
+    <h1 class="heading"><u><span>Jobs</span> & <span>Experience</span></u></h1>
 
     <div align="center" class="experience-container">
         <div class="experience-box">
             <!--<i class='bx bx-code-alt'></i>-->
-            <img height="55" src="acesst/graphic.png" width="55">
+            <img src="assets/images/services/web.png">
+            <div class="experience-layer">
+                <h3>Web Development</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                <a class="btn" href="#">View More</a>
+            </div>
+        </div>
+        <br>
+
+        <div class="experience-box">
+            <!--<i class='bx bx-code-alt'></i>-->
+            <img src="assets/images/services/graphic.jpg">
+            <div class="experience-layer">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                <a class="btn" href="#">View More</a>
+            </div>
+        </div>
+        <br>
+
+        <div class="experience-box">
+            <!--<i class='bx bx-code-alt'></i>-->
+            <img src="assets/images/services/mobile.jpg">
+            <div class="experience-layer">
+                <h3>Mobile App Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                <a class="btn" href="#">View More</a>
+            </div>
+        </div>
+        <br>
+
+        <div class="experience-box">
+            <!--<i class='bx bx-code-alt'></i>-->
+            <img src="assets/images/services/mobile.jpg">
+            <div class="experience-layer">
+                <h3>Mobile App Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                <a class="btn" href="#">View More</a>
+            </div>
+        </div>
+        <br>
+
+        <div class="experience-box">
+            <!--<i class='bx bx-code-alt'></i>-->
+            <img src="assets/images/services/mobile.jpg">
+            <div class="experience-layer">
+                <h3>Mobile App Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                <a class="btn" href="#">View More</a>
+            </div>
+        </div>
+        <br>
+    </div>
+</section>
+<br>
+
+<!--========================================================================================================-->
+
+<!--My Projects Section Design-->
+
+<!--<h2 class="heading2" align="center"  data-aos="fade-up"><u>Commercial Projects</u></h2>
+    <br>
+
+    <div class="coProjects-container" align="center">
+        <div class="coProjects-box" data-aos="flip-up" data-aos-duration="2000">
+            <img class="coProjects-item coProjects-item-1" src="assets/images/services/graphic.jpg" alt="">
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
             <a class="btn" href="#">Read More</a>
-        </div>
-        <br>
 
-        <div class="experience-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img height="55" src="acesst/graphic.png" width="55">
+            <img class="coProjects-item coProjects-item-2" src="assets/images/services/graphic.jpg" alt="">
             <h3>Graphic Design</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
             <a class="btn" href="#">Read More</a>
-        </div>
-        <br>
 
-        <div class="experience-box">
-            <!--<i class='bx bx-code-alt'></i>-->
+            <img class="coProjects-item coProjects-item-3" src="assets/images/services/graphic.jpg" width="55">
             <h3>Mobile App Development</h3>
-            <img height="55" src="acesst/graphic.png" width="55">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+            <a class="btn" href="#">Read More</a>
+        </div>
+        <div class="coProjects-controls"></div>
+    </div>
+    <br>
+
+    <h2 align="center" class="heading2"><u>Assignments</u></h2>
+    <br>
+
+    <div align="center" class="assignments-container">
+        <div class="assignments-box">
+            <img height="55" src="assets/images/services/graphic.jpg" width="55">
+            <h3>Assignment-01</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+            <a class="btn" href="#">Read More</a>
+
+            <img height="55" src="assets/images/services/graphic.jpg" width="55">
+            <h3>Assignment-02</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+            <a class="btn" href="#">Read More</a>
+
+            <h3>Assignment-03</h3>
+            <img height="55" src="assets/images/services/graphic.jpg" width="55">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
             <a class="btn" href="#">Read More</a>
         </div>
         <br>
+        <div class="assignment-controls"></div>
+    </div>-->
+
+<section class="myProjects-section" id="myProjectsSection">
+    <h1 class="heading" data-aos="fade-up"><u>My<span> Projects</span></u></h1>
+    <br>
+        <div class="projects-container" align="center">
+            <div class="projects-box" data-aos="flip-up" data-aos-duration="2000">
+                <img class="projects-item projects-item-1" src="assets/images/services/web.png" alt="projects-image-01" data-index="1">
+                    <div class="project-layer">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                        <a class="btn" href="#">Go To GitHub Repo</a>
+                        <br><br>
+                        <a class="btn" href="#">Download</a>
+                    </div>
+            </div>
+
+            <div class="projects-box" data-aos="flip-up" data-aos-duration="2000">
+                <img class="projects-item projects-item-2" src="assets/images/services/graphic.jpg" alt="projects-image-02" data-index="2">
+                <div class="project-layer">
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                    <a class="btn" href="#">Go To GitHub Repo</a>
+                    <br><br>
+                    <a class="btn" href="#">Download</a>
+                </div>
+            </div>
+
+            <div class="projects-box" data-aos="flip-up" data-aos-duration="2000">
+                <img class="projects-item projects-item-3" src="assets/images/services/mobile.jpg" alt="projects-image-03" data-index="3">
+                <div class="project-layer">
+                    <h3>Mobile App Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                    <a class="btn" href="#">Go To GitHub Repo</a>
+                    <br><br>
+                    <a class="btn" href="#">Download</a>
+                </div>
+            </div>
+                <div class="projects-controls"></div>
+        </div>
+
+    <h1 class="heading" data-aos="fade-up"><u>My<span> Assignments</span></u></h1>
+    <br>
+    <div class="assignments-container" align="center">
+        <div class="assignments-box" data-aos="flip-up" data-aos-duration="2000">
+            <img class="assignments-item assignments-item-1" src="assets/images/html,css.png" alt="assignments-image-01" data-index="1">
+            <div class="assignments-layer">
+                <h3>CSS Assignments</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                <a class="btn" href="project.html">View More</a>
+            </div>
+        </div>
+
+        <div class="assignments-box" data-aos="flip-up" data-aos-duration="2000">
+            <img class="assignments-item assignments-item-2" src="assets/images/javascript.jpg" alt="assignments-image-02" data-index="2">
+            <div class="assignments-layer">
+                <h3>Java Script Assignment</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
+                <a class="btn" href="project.html">View More</a>
+            </div>
+        </div>
+        <div class="assignments-controls"></div>
     </div>
 </section>
 
 <!--========================================================================================================-->
 
-<!--My Projects Section Design-->
-<section class="myProjects" id="myProjects">
-    <h2 class="heading"><u><span>My Projects</span></u></h2>
-    <br>
-    <h2 align="center"><u>Academic Projects</u></h2>
-    <br>
-    <div align="center" class="acProjects-container">
-        <div class="acProjects-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img height="55" src="acesst/graphic.png" width="55">
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-        </div>
-        <br>
-
-        <div class="acProjects-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img height="55" src="acesst/graphic.png" width="55">
-            <h3>Graphic Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-        </div>
-        <br>
-
-        <div class="acProjects-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <h3>Mobile App Development</h3>
-            <img height="55" src="acesst/graphic.png" width="55">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-        </div>
-    </div>
-    <br>
-    <h2 align="center"><u>Commercial Projects</u></h2>
-    <br>
-    <div align="center" class="coProjects-container">
-        <div class="coProjects-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img height="55" src="acesst/graphic.png" width="55">
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-        </div>
-        <br>
-
-        <div class="coProjects-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img height="55" src="acesst/graphic.png" width="55">
-            <h3>Graphic Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-        </div>
-        <br>
-
-        <div class="coProjects-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <h3>Mobile App Development</h3>
-            <img height="55" src="acesst/graphic.png" width="55">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-        </div>
-    </div>
-    <br>
-    <h2 align="center"><u>Assignments</u></h2>
-    <br>
-    <div align="center" class="assignments-container">
-        <div class="assignments-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img height="55" src="acesst/graphic.png" width="55">
-            <h3>Assignment-01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-        </div>
-        <br>
-
-        <div class="assignments-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <img height="55" src="acesst/graphic.png" width="55">
-            <h3>Assignment-02</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-        </div>
-        <br>
-
-        <div class="assignments-box">
-            <!--<i class='bx bx-code-alt'></i>-->
-            <h3>Assignment-03</h3>
-            <img height="55" src="acesst/graphic.png" width="55">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores facere iure magni nobis perferendis placeat quae veniam vero voluptate voluptatibus.</p>
-            <a class="btn" href="#">Read More</a>
-            </div>
-         </div>
-    </section>
-
-    <!--========================================================================================================-->
-
 <!--Contact Details Section Design-->
-<section class="contactUs" id="contactUs">
-    <h1 class="heading"><u><span>Contact Details</span></u></h1>
-    <p><h3 align="left">Got a project? Let's talk.</h3></p>
-    <p><h3 align="left">Tell me your need according to the services I provide. I usually respond quickly.</h3></p>
-    <div class="contactUs-container">
+<section class="contactUs-section" id="contactUsSection">
+    <h1 class="heading"><u>Contact<span> Details</span></u></h1>
+    <p><h3 align="center">Got a project? Let's talk.</h3></p><br>
+    <p><h3 align="center">Tell me your need according to the services I provide. <br> I usually respond quickly.</h3></p><br>
+    <div class="contactUs-container" align="center">
         <div class="contactUs-box">
-            <form align="center">
+            <form action="#">
                 <h2 class="heading"><u><span>Tell Me About Your Project.</span></u></h2>
-                <label for="name">What is your name ?</label><br>
-                <input id="name" name="name" placeholder="Your Name" type="text"><br><br>
-                <label for="email">What is your Email Address ?</label><br>
-                <input id="email" name="email" placeholder="Your Email Address" type="email"><br><br>
-                <label for="mobileNo">What is your Mobile No ?</label><br>
-                <input id="mobileNo" name="mobileNo" pattern="[0-9]{3}-[0-9]{3}[0-9]{4}" placeholder="Your Mobile No" type="tel"><br><br>
-                <label for="subject">What is your subject ?</label><br>
-                <input id="subject" name="subject" placeholder="Your Subject" type="text"><br><br>
-                <label for="message">Tell me your need ?</label><br>
-                <textarea cols="30" id="message" name="message" placeholder="Enter Your Message..." rows="10"></textarea><br>
-                <input align="center" type="submit"> <input align="center" type="reset">
+                <br><br>
+                <div class="input-box">
+                    <input id="name" name="name" placeholder="What is your Name ?" type="text"><br><br>
+                    <input id="email" name="email" placeholder="What is your Email Address ?" type="email"><br><br>
+                    <input id="mobileNo" name="mobileNo" pattern="[0-9]{3}-[0-9]{3}[0-9]{4}" placeholder="What is your Mobile No ?" type="tel"><br><br>
+                    <input id="subject" name="subject" placeholder="What is your Subject ?" type="text"><br><br>
+                </div>
+                <label for="message"></label><br>
+                <textarea cols="30" id="message" name="message" placeholder="Tell me your need ? Enter Your Message..." rows="10"></textarea><br>
+                <input type="submit" value="Send Message" class="btn"> <input type="reset" value="Reset Message" class="btn">
             </form>
         </div>
     </div>
     <br>
+
     <section align="left" class="contact-media" id="contactMedia">
     <div class="contact-media">
-        <span><img alt="whatsapp.png" height="25" src="assacts/logo/social%20media/whatsapp.png" width="25"></span>
-        <span><img alt="facebook.png" height="25" src="assacts/logo/social%20media/facebook.png" width="25"></span>
-        <span><img alt="instagram.jpg" height="25" src="assacts/logo/social%20media/instagram.jpg" width="25"></span>
-        <span><img alt="youtube.png" height="25" src="assacts/logo/social%20media/youtube.png" width="25"></span>
-        <span><img alt="github.png" height="25" src="assacts/logo/social%20media/github.png" width="25"></span>
-        <span><img alt="linkedin.png" height="25" src="assacts/logo/social%20media/linkedin.png" width="25"></span>
+        <span><img alt="whatsapp.png" height="25" src="assets/logo/social%20media/whatsapp.png" width="25"></span>
+        <span><img alt="facebook.png" height="25" src="assets/logo/social%20media/facebook.png" width="25"></span>
+        <span><img alt="instagram.jpg" height="25" src="assets/logo/social%20media/instagram.jpg" width="25"></span>
+        <span><img alt="youtube.png" height="25" src="assets/logo/social%20media/youtube.png" width="25"></span>
+        <span><img alt="github.png" height="25" src="assets/logo/social%20media/github.png" width="25"></span>
+        <span><img alt="linkedin.png" height="25" src="assets/logo/social%20media/linkedin.png" width="25"></span>
     </div>
     </section>
     <br>
     <section class="footer-media" id="footerMedia">
         <div class="footer-media">
-            <span><img alt="" height="25" src="assacts/logo/social%20media/user.png" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/user.png" width="25"></span>
             <text>M.Kaveen Sewhan</text>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/email.jpg" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/email.jpg" width="25"></span>
             <text>managekaveen2001@gmail.com</text><br>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/mobile.png" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/mobile.png" width="25"></span>
             <text>076-0410987</text>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/googlemap.png" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/googlemap.png" width="25"></span>
             <text>Kottawa,Sri Lanka</text><br>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/whatsapp.png" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/whatsapp.png" width="25"></span>
             <text>076-0410987</text>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/facebook.png" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/facebook.png" width="25"></span>
             <text>Kaveen Sewhan</text><br>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/instagram.jpg" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/instagram.jpg" width="25"></span>
             <text>Kaveen_2001</text>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/youtube.png" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/youtube.png" width="25"></span>
             <text>Kaveen Sewhan</text><br>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/github.png" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/github.png" width="25"></span>
             <text>https://github.com/Kaveen2001</text><br>
-            <span><img alt="" height="25" src="assacts/logo/social%20media/linkedin.png" width="25"></span>
+            <span><img alt="" height="25" src="assets/logo/social%20media/linkedin.png" width="25"></span>
             <text>https://www.linkedin.com/in/kaveen-sewhan-b1591b265</text><br>
         </div>
     </section>
 </section>
-    <!--========================================================================================================-->
+<br>
 
-    <!--Footer Section Design-->
+<!--========================================================================================================-->
 
-<footer>
+<!--Footer Section Design-->
+<footer id="footerSection">
     <nav>
-        <div align="center">
-            <img src="assacts/images/profile%20photo/home.jpg" alt="user.jpg" width="150">
-            <p align="center"><b>© Copyright 2023. All Rights Reserved Designed by Kaveen Sewhan.</b></p>
+        <div class="footer-image">
+            <img src="assets/images/profile%20photo/home.jpg" alt="user.jpg" width="250" align="center">
+        </div>
+        <div class="footer-text">
+            <p><b>© Copyright 2023. All Rights Reserved Designed by Kaveen Sewhan.</b></p>
         </div>
     </nav>
 </footer>
 
+    <!--jQuery Library-->
+    <script src="assets/js/jQuery/jQuery.min.js"></script>
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Typed JS-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!--Custom JS-->
+    <script src="assets/js/script.js"></script>
+    <!--AOS JS Animation Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Swiper JS API-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/aos/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        $(document).ready(() => {
+            setTimeout(() => {
+                $('#preloader').css("display", "none");
+            }, 3000 )
+        });
+
+    </script>
+
+ <script>
+     var swiper = new Swiper(".gallery-content",{
+         effect: 'coverflow',
+         grabCursor:true,
+         centeredSlides:true,
+         slidesPerView: 'auto',
+         coverflowEffect: {
+             rotate:50,
+             stretch:0,
+             depth:100,
+             modifier:1,
+             slideShadows:true,
+         },
+         pagination: {
+             el: '.gallery-pagination',
+         },
+     });
+ </script>
 </body>
 </html>

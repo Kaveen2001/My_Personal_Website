@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    background-image: url("../assets/images/knightCar.jpg");
+    background-size: cover;
+    background-origin: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    width: max-content;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+    padding-bottom: 9px;
+}
+
+#container {
+    display: flex;
+    position: absolute;
+    width: 95vw;
+    left: 320px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    top: 450px;
+
+}
+
+#container > div {
+    width: 100px;
+    height: 50px;
+    border: 1px solid crimson;
+
+}
+
+#btnContainer > button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnContainer {
+    position: absolute;
+    display: flex;
+    width: 95vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 550px;
+    justify-content: center;
+}
